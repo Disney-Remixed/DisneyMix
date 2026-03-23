@@ -125,13 +125,10 @@ namespace Mix
 		{
 			get
 			{
-#if UNITY_ANDROID || !UNITY_EDITOR
-				return "http://10.0.0.77:80";
-#else
-				return "http://localhost:80";
-#endif
-			}
-		}
+                return "http://localhost:80";
+
+            }
+        }
 
 		public static string GuestControllerClientId
 		{
@@ -209,11 +206,8 @@ namespace Mix
 		{
 			get
 			{
-#if UNITY_ANDROID || !UNITY_EDITOR
-				return "http://10.0.0.77:80";
-#else
                 return "http://localhost:80";
-#endif
+
             }
         }
 
@@ -222,11 +216,8 @@ namespace Mix
 		{
 			get
 			{
-#if UNITY_ANDROID || !UNITY_EDITOR
-				return "http://10.0.0.77:80";
-#else
                 return "http://localhost:80";
-#endif
+
             }
         }
 
@@ -234,11 +225,8 @@ namespace Mix
 		{
 			get
 			{
-#if UNITY_ANDROID || !UNITY_EDITOR
-				return "http://10.0.0.77:80";
-#else
+
                 return "http://localhost:80";
-#endif
             }
         }
 
@@ -246,11 +234,7 @@ namespace Mix
 		{
 			get
 			{
-#if UNITY_ANDROID || !UNITY_EDITOR
-				return "http://10.0.0.77:80";
-#else
                 return "http://localhost:80";
-#endif
             }
         }
 

@@ -150,6 +150,23 @@ public static class RebuildAssetBundles
 			}
 
 			string fileNameNoExt = Path.GetFileNameWithoutExtension(relativePath).ToLowerInvariant();
+
+			// Custom: If file contains both "avtr" and "thumb", map to "avatar_thumbs"
+			if (fileNameNoExt.Contains("avtr") && fileNameNoExt.Contains("thumb"))
+			{
+				AddMapKey(map, fileNameNoExt, "avatar_thumbs");
+				AddMapKey(map, fileNameNoExt + ".unity3d", "avatar_thumbs");
+				if (fileNameNoExt.EndsWith("_hd"))
+				{
+					AddMapKey(map, fileNameNoExt.Substring(0, fileNameNoExt.Length - 3), "avatar_thumbs");
+				}
+				else if (fileNameNoExt.EndsWith("_sd"))
+				{
+					AddMapKey(map, fileNameNoExt.Substring(0, fileNameNoExt.Length - 3), "avatar_thumbs");
+				}
+				continue; // Skip default mapping for these files
+			}
+
 			AddMapKey(map, fileNameNoExt, relativeFolder);
 
 			// common bundle naming variants
