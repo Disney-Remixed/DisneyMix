@@ -16,7 +16,7 @@
 ---
 
 ### 📈 Project Status
-- [x] **Client status:** Mostly stable, few bugs here and there that need fixing, mostly icons and shaders
+- [x] **Client status:** Mostly stable, few bugs here and there that need fixing, mostly icons and shaders.
 - [x] **Mobile Support:** Early, but functional.
 - [>] **Chatting:** Basic functionality should work; improvements for a smoother experience are planned.
 - [ ] **Social Features:** Currently being researched in client to reimplement server-side.
@@ -35,5 +35,5 @@
 ### 🚀 Getting Started
 1. Clone the repository.
 2. Ensure you are using the correct **Unity Editor** version specified above.
-3. Add the project to Unity and open it.
+3. Add the project to **Unity Hub** and open it.
 4. To boot, open `StaticAssets/Scenes/scn_Main.unity`
